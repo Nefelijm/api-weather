@@ -51,44 +51,67 @@ function handleError() {
 function addNews() {
   const data = JSON.parse(this.response);
   console.log(data);
-  const informacion = data.daily.data;
-  console.log(informacion);
+  const information = data.daily.data;
+  console.log(information);
+   
 
-  informacion.forEach(function(article) {
-    const temperatura = article.temperatureHigh;
+  const monday = information[0].temperatureMax ;
+  const tuesday = information[1].temperatureMax;
+  const wednesday = information[2].temperatureMax;
+  const thursday = information[3].temperatureMax;
+  const friday = information[4].temperatureMax;
+  const saturday = information[5].temperatureMax;
+
+
+  const limonday = document.getElementById('monday');
+  limonday.innerText = 'LUNES:' + '' + monday + ' °C';
+ 
+  const lituesday = document.getElementById('tuesday');
+  lituesday.innerText = 'MARTES:' + '' + tuesday + ' °C';
+
+  const liwednesday = document.getElementById('wednesday');
+  liwednesday.innerText = 'MIRCOLES:' + '' + wednesday + ' °C';
+
+  const lithursday = document.getElementById('thursday');
+  lithursday.innerText = 'JUEVES:' + '' + thursday + ' °C';
+
+  const lifriday = document.getElementById('friday');
+  lifriday.innerText = 'VIERNES:' + '' + friday + ' °C';
+
+  const lisaturday = document.getElementById('saturday');
+  lisaturday.innerText = 'SABADO:' + '' + saturday + ' °C';
+
+   
+
+  information.forEach(function(article) {
+
+    const temperature = article.temperatureHigh;
     const summary = article.summary;
     const humidity = article.humidity;
-    // const precipProbability = article.precipProbability;
-    console.log(temperatura);
+    const precipProbability = article.precipProbability;
 
-    // Llena los valores en el html
+    const today = document.getElementById('today');
+    const temper = document.getElementById('temperature');
+    const summ = document.getElementById('summary');
+    const humi = document.getElementById('humidity');
+    const precip = document.getElementById('precipProbability');
 
-    let lunes = document.createElement('li');
-    lunes.className = 'lunesStyle';
-   
+    temper.innerText = 'Temperatura:' + temperature + ' °C'; 
+    summ.innerText = 'SUMMARY:' + summary;
+    humi.innerText = 'HUMIDITY:' + humidity;
+    precip.innerText = 'precipProbability:' + precipProbability;
 
-    let sum = document.createElement('p');
-    let hum = document.createElement('p');
-    let container = document.getElementById('container');
-    container.className = 'containerStyle';
-    // let divHoy = document.getElementById('div');
-    let ul = document.getElementById('dias');
-    
+  }); 
+
   
-    // divHoy.innerText = temperatura;
-   
-    
-    lunes.innerText = temperatura ;
-    sum.innerText = summary;
-    hum.innerText = humidity;
-     
 
-    // ul.appendChild(divHoy);
-    ul.appendChild(lunes);
-    ul.appendChild(sum);
-    ul.appendChild(hum);
-    
-    
-    container.appendChild(ul);
-  });
+  
+  
+       
+
+
+
+
+
+  
 };

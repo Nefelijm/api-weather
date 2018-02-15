@@ -3,11 +3,13 @@
     margin: 0;
 }
 .btnStyle {
-    background-color: rgb(92, 170, 92);
+    background-color: rgb(17, 228, 217);
     border-radius: 10px;
     color: white;
     font-size: 1.2rem;
     margin: 8px;
+    display: block;
+    text-align: center;
 }
 .inputStyle {
     padding: 5px;
@@ -16,17 +18,25 @@
     border: 2px solid gray;
     width: 150px;
 }
-.styleCont {
-    /*outline: 1px solid black;*/
+.styleCont h3 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 4%;
 }
 
 .lunesStyle {
-    background-color: rgb(62, 140, 146);
+    margin-top: 7%;   
     list-style: none;
     font-family: 'Roboto', sans-serif;
+    
 }
 .containerStyle {
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(126, 200, 235);
+    font-weight: bold;
+    
 }
 .styleH1 {
     font-weight: 1rem;

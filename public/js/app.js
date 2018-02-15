@@ -64,17 +64,15 @@ function addNews() {
     // Llena los valores en el html
 
     let lunes = document.createElement('li');
-    
-  
-
+    lunes.className = 'lunesStyle';
    
 
     let sum = document.createElement('p');
     let hum = document.createElement('p');
     let container = document.getElementById('container');
+    container.className = 'containerStyle';
     // let divHoy = document.getElementById('div');
     let ul = document.getElementById('dias');
-   
     
   
     // divHoy.innerText = temperatura;
@@ -83,7 +81,6 @@ function addNews() {
     lunes.innerText = temperatura ;
     sum.innerText = summary;
     hum.innerText = humidity;
-   
      
 
     // ul.appendChild(divHoy);
@@ -93,7 +90,5 @@ function addNews() {
     
     
     container.appendChild(ul);
-
-
   });
 };

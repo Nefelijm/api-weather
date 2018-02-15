@@ -1,0 +1,40 @@
+* {
+    border: 0;
+    margin: 0;
+}
+.btnStyle {
+    background-color: rgb(92, 170, 92);
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    margin: 8px;
+}
+.inputStyle {
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 2px solid gray;
+    width: 150px;
+}
+.styleCont {
+    /*outline: 1px solid black;*/
+}
+
+.lunesStyle {
+    background-color: rgb(62, 140, 146);
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+.containerStyle {
+    font-family: 'Roboto', sans-serif;
+}
+.styleH1 {
+    font-weight: 1rem;
+    font-family: 'Kavivanar', cursive;
+    text-align: center;
+    color: white;
+}
+.h1Cont {
+    background-color: black;
+    padding: 10px 0px 10px 0px;
+}

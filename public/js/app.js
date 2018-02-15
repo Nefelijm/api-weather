@@ -55,8 +55,8 @@ function addNews() {
   console.log(information);
    
   // let temperatureMaxCelcius = information.temperatureMax)
-  const monday = (Math.floor(((information[0].temperatureMax) -32 )*5)/9);
-  const tuesday = (Math.floor(((information[1].temperatureMax) - 32)*5)/9);
+  const monday = (Math.floor(((information[0].temperatureMax) - 32) * 5) / 9);
+  const tuesday = (Math.floor(((information[1].temperatureMax) - 32) * 5) / 9);
   const wednesday = (Math.floor(((information[2].temperatureMax) - 32) * 5) / 9);
   const thursday = (Math.floor(((information[3].temperatureMax) - 32) * 5) / 9);
   const friday = (Math.floor(((information[4].temperatureMax) - 32) * 5) / 9);
@@ -80,11 +80,9 @@ function addNews() {
 
   const lisaturday = document.getElementById('saturday');
   lisaturday.innerText = 'SABADO:' + '' + saturday + ' °C';
-
    
 
   information.forEach(function(article) {
-
     const temperature = article.temperatureHigh;
     const summary = article.summary;
     const humidity = article.humidity;
@@ -100,18 +98,5 @@ function addNews() {
     summ.innerText = 'SUMMARY:' + summary;
     humi.innerText = 'HUMIDITY:' + humidity;
     precip.innerText = 'precipProbability:' + precipProbability;
-
-  }); 
-
-  
-
-  
-  
-       
-
-
-
-
-
-  
+  });
 };

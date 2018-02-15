@@ -48,3 +48,9 @@
     background-color: black;
     padding: 10px 0px 10px 0px;
 }
+.contWeek li {
+    list-style: none;
+}
+.styleWeather {
+    font-family: 'Roboto', sans-serif;
+}

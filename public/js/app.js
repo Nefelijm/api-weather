@@ -54,17 +54,17 @@ function addNews() {
   const information = data.daily.data;
   console.log(information);
    
-
-  const monday = information[0].temperatureMax ;
-  const tuesday = information[1].temperatureMax;
-  const wednesday = information[2].temperatureMax;
-  const thursday = information[3].temperatureMax;
-  const friday = information[4].temperatureMax;
-  const saturday = information[5].temperatureMax;
+  // let temperatureMaxCelcius = information.temperatureMax)
+  const monday = (Math.floor(((information[0].temperatureMax) -32 )*5)/9);
+  const tuesday = (Math.floor(((information[1].temperatureMax) - 32)*5)/9);
+  const wednesday = (Math.floor(((information[2].temperatureMax) - 32) * 5) / 9);
+  const thursday = (Math.floor(((information[3].temperatureMax) - 32) * 5) / 9);
+  const friday = (Math.floor(((information[4].temperatureMax) - 32) * 5) / 9);
+  const saturday = (Math.floor(((information[5].temperatureMax) - 32) * 5) / 9);
 
 
   const limonday = document.getElementById('monday');
-  limonday.innerText = 'LUNES:' + '' + monday + ' °C';
+  limonday.innerText = 'LUNES:' + '' + monday + '°C';
  
   const lituesday = document.getElementById('tuesday');
   lituesday.innerText = 'MARTES:' + '' + tuesday + ' °C';

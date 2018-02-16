@@ -3,12 +3,12 @@
     margin: 0;
 }
 .btnStyle {
-    background-color: rgb(17, 228, 217);
+    background-color: white;
     border-radius: 10px;
     color: white;
     font-size: 1.2rem;
     margin: 8px;
-    display: block;
+
     text-align: center;
 }
 .inputStyle {
@@ -21,8 +21,6 @@
 .styleCont h3 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    width: 80%;
-    margin-left: 10%;
     margin-top: 4%;
 }
 
@@ -53,4 +51,14 @@
 }
 .styleWeather {
     font-family: 'Roboto', sans-serif;
+}
+.styleWeather p {
+    font-family: 'Roboto', sans-serif;
+}
+.disBlock {
+    display: inline;
+}
+.btnW {
+    display: block;
+    margin-left: 34%;
 }

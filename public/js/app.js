@@ -94,7 +94,7 @@ function addNews() {
     const humi = document.getElementById('humidity');
     const precip = document.getElementById('precipProbability');
 
-    temper.innerText = 'Temperatura:' + temperature + ' °C'; 
+    temper.innerText = 'Temperatura:' + (Math.floor(((temperature) - 32) * 5) / 9) + ' °C'; 
     summ.innerText = 'SUMMARY:' + summary;
     humi.innerText = 'HUMIDITY:' + humidity;
     precip.innerText = 'precipProbability:' + precipProbability;
